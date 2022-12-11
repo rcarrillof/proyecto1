@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.js"></script>
+    <title>Informacion</title>
+</head>
+
+<body>
+    <header>
+        <div class="container__menu">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html"></a></li>
+                        <li><a href="#">Lista de componentes</a>
+                            <ul>
+                                <li><a href="../html/acordion.html">Accordion</a></li>
+                                <li><a href="../html/alerts.html">Alerts</a></li>
+                                <li><a href="../html/notifications.html">Notifications</a></li>
+                                <li><a href="../html/information.html">Information</a></li>
+                                <li><a href="../html/buttons.html">Buttons</a></li>
+                                <li><a href="../html/card.html">Card</a></li>
+                                <li><a href="../html/carousel.html">Carousel</a></li>
+                                <li><a href="../html/collapse.html">Collapse</a></li>
+                                <li><a href="../html/dropdowns.html">Dropdowns</a></li>
+                                <li><a href="../html/list_group.html">List group</a></li>
+                                <li><a href="../html/modal.html">Modal</a></li>
+                                <li><a href="../html/navs_&_tabs.html">Navs & tabs</a></li>
+                                <li><a href="../html/navbar.html">Navbar</a></li>
+                                <li><a href="../html/offcanvas.html">Offcanvas</a></li>
+                                <li><a href="../html/placeholders.html">Placeholders</a></li>
+                                <li><a href="../html/popovers.html">Popovers</a></li>
+                                <li><a href="../html/progress.html">Progress</a></li>
+                                <li><a href="../html/scrollspy.html">Scrollspy</a></li>
+                                <li><a href="../html/toasts.html">Toasts</a></li>
+                                <li><a href="../html/tooltips.html">Tooltips</a></li>
+                                <li><a href="../html/tables.html">Tables</a></li>
+                                <li><a href="../html/forms.html">Forms</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../html/contacto.html">Contacto</a></li>
+                        <li><a href="../html/acerca_de.html">Acerca de</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="section1 p-5">
+        <h1>Breadcrumb</h1>
+        <h2>Indique la ubicación de la página actual dentro de una jerarquía de navegación que agrega automáticamente
+            separadores a través de <code>CSS.</code></h2>
+        <h3>Ejemplo:</h3>
+        <div class="container w-100">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+                </ol>
+            </nav>
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Lista de componentes</li>
+                </ol>
+            </nav>
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="/html/information.html">Lista de componentes</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <section class="section2 p-5">
+        <h1>Dividers</h1>
+        <h2>Los divisores se agregan automáticamente en CSS a través de <code>::before</code> y <code> content.</code>
+        </h2>
+        <div class="container w-100">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+            </nav>
+        </div>
+
+    </section>
+    <section class="section3 p-5">
+        <h2>También puede eliminar la configuración del divisor <code>--bs-breadcrumb-divider: ''</code>; (las cadenas vacías en las
+            propiedades personalizadas de <code> CSS </code>cuentan como un valor), o establecer la variable Sass en <code>$breadcrumb-divider: none;.</code>
+            </h2>
+        <div class="container w-100">
+            <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Informacion</li>
+                </ol>
+              </nav>
+        </div>
+    </section>
+</body>
+
+</html>

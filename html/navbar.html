@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.js"></script>
+    <title>Navbar</title>
+</head>
+
+<body>
+    <header>
+        <div class="container__menu">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html"></a></li>
+                        <li><a href="#">Lista de componentes</a>
+                            <ul>
+                                <li><a href="../html/acordion.html">Accordion</a></li>
+                                <li><a href="../html/alerts.html">Alerts</a></li>
+                                <li><a href="../html/notifications.html">Notifications</a></li>
+                                <li><a href="../html/information.html">Information</a></li>
+                                <li><a href="../html/buttons.html">Buttons</a></li>
+                                <li><a href="../html/card.html">Card</a></li>
+                                <li><a href="../html/carousel.html">Carousel</a></li>
+                                <li><a href="../html/collapse.html">Collapse</a></li>
+                                <li><a href="../html/dropdowns.html">Dropdowns</a></li>
+                                <li><a href="../html/list_group.html">List group</a></li>
+                                <li><a href="../html/modal.html">Modal</a></li>
+                                <li><a href="../html/navs_&_tabs.html">Navs & tabs</a></li>
+                                <li><a href="../html/navbar.html">Navbar</a></li>
+                                <li><a href="../html/offcanvas.html">Offcanvas</a></li>
+                                <li><a href="../html/placeholders.html">Placeholders</a></li>
+                                <li><a href="../html/popovers.html">Popovers</a></li>
+                                <li><a href="../html/progress.html">Progress</a></li>
+                                <li><a href="../html/scrollspy.html">Scrollspy</a></li>
+                                <li><a href="../html/toasts.html">Toasts</a></li>
+                                <li><a href="../html/tooltips.html">Tooltips</a></li>
+                                <li><a href="../html/tables.html">Tables</a></li>
+                                <li><a href="../html/forms.html">Forms</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../html/contacto.html">Contacto</a></li>
+                        <li><a href="../html/acerca_de.html">Acerca de</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section1 p-5">
+            <h1>Navbar</h1>
+            <h2>Las barras de navegación vienen con soporte integrado para un puñado de subcomponentes. Elije entre los
+                siguientes según sea necesario:</h2>
+            <p>
+            <ul>
+                <li><code>.navbar-brand</code> para el nombre de tu empresa, producto o proyecto.</li>
+                <li><code>.navbar-nav</code> para una navegación ligera y de altura completa (incluido soporte para
+                    menús desplegables).</li>
+                <li><code>.navbar-toggler</code> para usar con nuestro complemento Collapse y otros comportamientos de
+                    cambio de navegación</a>.</li>
+                <li>Utilidades flex y de espaciado para controles y acciones de formularios.</li>
+                <li><code>.navbar-text</code> para agregar cadenas de texto centradas verticalmente.</li>
+                <li><code>.collapse.navbar-collapse</code> para agrupar y ocultar el contenido de la barra de navegación
+                    pora breakpoint determinado.</li>
+                <li>Agrega un <code>.navbar-scroll</code> opcional para establecer una <code>max-height</code> y
+                    desplazar el contenido de la barra de navegación expandida</a>.</li>
+            </ul>
+            </p>
+        </section>
+        <section class="section2 p-5">
+            <article class="article2">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Enlace</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Acción</a></li>
+                                        <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">Deshabilitado</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </article>
+        </section>
+        <section class="section3 p-5">
+            <h2>Texto</h2>
+            <p>Agrega tu texto dentro de un elemento con la clase <code>.navbar-brand</code>.</p>
+            <article class="article3">
+                <!-- Como un enlace -->
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                    </div>
+                </nav>
+
+                <!-- Como un encabezado -->
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid">
+                        <span class="navbar-brand mb-0 h1">Navbar</span>
+                    </div>
+                </nav>
+            </article>
+        </section>
+        <section class="section4 p-5">
+            <h2>Imagen</h2>
+            <p>Puedes reemplazar el texto dentro de <code>.navbar-brand</code> con <code>img.</code></p>
+            <article class="article4">
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img src="../asserts/boton-de-inicio.png" alt="casita logo inicio" width="30" height="24">
+                        </a>
+                    </div>
+                </nav>
+            </article>
+        </section>
+        <section class="section5 p-5">
+            <h2>Imagen y texto</h2>
+            <p>También puedes hacer uso de algunas utilidades adicionales para agregar una imagen y texto al mismo
+                tiempo. Ten en cuenta la adición de <code>.d-inline-block</code> y <code>.align-text-top</code> en
+                <img>.
+            </p>
+            <article class="article5">
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="../asserts/boton-de-inicio.png" alt="" width="30" height="24"
+                                class="d-inline-block align-text-top">
+                            Inicio
+                        </a>
+                    </div>
+                </nav>
+            </article>
+        </section>
+        <section class="section6 p-5">
+            <h2>Esquemas de color</h2>
+            <p>Tematizar la barra de navegación nunca ha sido tan fácil gracias a la combinación de clases de temas y
+                utilidades de <code>background-color.</code> Elije entre .navbar-light para usar con colores de fondo
+                claros o
+                <code>.navbar-dark</code> para colores de fondo oscuros. Luego, personaliza con las utilidades
+                <code>.bg-*.</code>
+            </p>
+            <article class="article6">
+                <nav class="navbar navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Navbar con texto</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarText">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Características</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Precios</a>
+                                </li>
+                            </ul>
+                            <span class="navbar-text">
+                                Texto con un elemento en línea
+                            </span>
+                        </div>
+                    </div>
+                </nav>
+                </nav>
+
+                <nav class="navbar navbar-dark bg-primary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Navbar con texto</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarText">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Características</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Precios</a>
+                                </li>
+                            </ul>
+                            <span class="navbar-text">
+                                Texto con un elemento en línea
+                            </span>
+                        </div>
+                    </div>
+                </nav>
+                </nav>
+
+                <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Navbar con texto</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarText">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Características</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Precios</a>
+                                </li>
+                            </ul>
+                            <span class="navbar-text">
+                                Texto con un elemento en línea
+                            </span>
+                        </div>
+                    </div>
+                </nav>
+                </nav>
+
+            </article>
+        </section>
+    </main>
+    <style>
+        .section2 article,
+        .section3 article,
+        .section5 article {
+            margin-top: 30px;
+            margin-left: 100px;
+        }
+
+        .section2 article {
+            max-width: 800px;
+            margin-top: -80px;
+            margin-left: 10px;
+
+        }
+
+        .section3 article {
+            max-width: 1000px;
+        }
+
+        .section4 article {
+            max-width: 800px;
+            margin-left: 100px;
+
+        }
+
+        .section6 article {
+            max-height: 800px;
+            max-width: 800px;
+            margin-left: 100px;
+        }
+    </style>
+</body>
+
+</html>

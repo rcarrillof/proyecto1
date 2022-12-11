@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.js"></script>
+    <title>Modal</title>
+</head>
+
+<body>
+    <header>
+        <div class="container__menu">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html"></a></li>
+                        <li><a href="#">Lista de componentes</a>
+                            <ul>
+                                <li><a href="../html/acordion.html">Accordion</a></li>
+                                <li><a href="../html/alerts.html">Alerts</a></li>
+                                <li><a href="../html/notifications.html">Notifications</a></li>
+                                <li><a href="../html/information.html">Information</a></li>
+                                <li><a href="../html/buttons.html">Buttons</a></li>
+                                <li><a href="../html/card.html">Card</a></li>
+                                <li><a href="../html/carousel.html">Carousel</a></li>
+                                <li><a href="../html/collapse.html">Collapse</a></li>
+                                <li><a href="../html/dropdowns.html">Dropdowns</a></li>
+                                <li><a href="../html/list_group.html">List group</a></li>
+                                <li><a href="../html/modal.html">Modal</a></li>
+                                <li><a href="../html/navs_&_tabs.html">Navs & tabs</a></li>
+                                <li><a href="../html/navbar.html">Navbar</a></li>
+                                <li><a href="../html/offcanvas.html">Offcanvas</a></li>
+                                <li><a href="../html/placeholders.html">Placeholders</a></li>
+                                <li><a href="../html/popovers.html">Popovers</a></li>
+                                <li><a href="../html/progress.html">Progress</a></li>
+                                <li><a href="../html/scrollspy.html">Scrollspy</a></li>
+                                <li><a href="../html/toasts.html">Toasts</a></li>
+                                <li><a href="../html/tooltips.html">Tooltips</a></li>
+                                <li><a href="../html/tables.html">Tables</a></li>
+                                <li><a href="../html/forms.html">Forms</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../html/contacto.html">Contacto</a></li>
+                        <li><a href="../html/acerca_de.html">Acerca de</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section1 p-5">
+            <h1>Modal</h1>
+            <h2>Demostración en vivo</h2>
+            <p>Lanza una demostración modal funcional haciendo clic en el botón a continuación. Se deslizará hacia abajo
+                y
+                se desvanecerá desde la parte superior de la página.</p>
+
+            <article class="article1">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    abrir Modal de ejemplo </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog ">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">¡Esto es un ejemplo!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Robin acepta que Aqualad sea el líder del equipo. En el capitulo 8 Robin se puso celoso
+                                de
+                                que Batman le prestara mas atención a Aqualad pero lo resolvió.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Guardar cambios</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+        <section class="section2 p-5">
+            <h2>Backdrop estático</h2>
+            <p>Cuando el fondo se establece en static, el modal no se cerrará al hacer clic fuera de él. Haz clic en el
+                botón de abajo para probarlo.</p>
+            <article class="article2">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Lanzar modal de fondo estático
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Modal de ejemplo</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                el modal no se cerrará al hacer clic fuera de él.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Comprendido</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+        <section class="section3 p-5">
+            <h2>Centrado verticalmente</h2>
+            <p>Agrega <code>.modal-dialog-centered</code> a <code>.modal-dialog</code> para centrar verticalmente el
+                modal.</p>
+            <article class="article3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modalv">
+                    abrir Modal de ejemplo </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="Modalv" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">¡Esto es un ejemplo!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corrupti laboriosam fuga
+                                odit est repellat fugiat tenetur nemo aspernatur placeat, asperiores esse aliquid
+                                adipisci ex neque voluptate ad sed. Illum corporis esse quos nihil quaerat dicta,
+                                consectetur quo facilis quae eum, quas eligendi eaque dolorum quibusdam distinctio,
+                                similique neque dolor?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Guardar cambios</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="section4 p-5">
+            <h2>Tooltips y popovers</h2>
+            <p>Tooltips y popovers se pueden colocar dentro de los modales según sea necesario. Cuando los modales se
+                cierran, todos los tooltips y popovers también se descartan automáticamente.</p>
+            <article class="article4">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal11">
+                    abrir Modal de ejemplo </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog ">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">¡Esto es un ejemplo!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h5>Popover en un modal</h5>
+                                <p>Este <a href="#" role="button" class="btn btn-secondary popover-test"
+                                        title="Popover title"
+                                        data-bs-content="El contenido del cuerpo del  popover se establece en este atributo."
+                                        data-bs-container="#exampleModalPopovers">botón</a> muestra un popover al hacer
+                                    clic en él.</p>
+                                <hr>
+                                <h5>Tooltips en un modal</h5>
+                                <p><a href="#" class="tooltip-test" title="Tooltip"
+                                        data-bs-container="#exampleModalPopovers">Este enlace</a> y <a href="#"
+                                        class="tooltip-test" title="Tooltip"
+                                        data-bs-container="#exampleModalPopovers">este enlace</a> tienen tooltips en su
+                                    estado hover.</p>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Guardar cambios</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="section5 p-5">
+            <h2>Contenido modal variable</h2>
+            <p>¿Tienes un montón de botones que activan el mismo modal con contenidos ligeramente diferentes? Usa
+                <code>event.relatedTarget</code> y atributos HTML <code>data-bs-*</code> para variar el contenido
+                del modal según en qué botón
+                se hizo clic.
+            </p>
+            <article class="article5">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal22"
+                    data-bs-whatever="@mdo">Abrir modal para @mdo</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal22"
+                    data-bs-whatever="@fat">Abrir modal para @fat</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal22"
+                    data-bs-whatever="@getbootstrap">Abrir modal para @getbootstrap</button>
+
+                <div class="modal fade" id="exampleModal22" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Nuevo mensaje</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Destinatario:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Mensaje:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Enviar mensaje</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="section6 p-5">
+            <h2>Alternar entre modals</h2>
+            <p>Alterna entre múltiples modales con una colocación inteligente de los atributos
+                <code>data-bs-target</code> y
+                <code>data-bs-toggle.</code> Por ejemplo, podrías alternar un modal de restablecimiento de contraseña
+                desde un modal
+                de inicio de sesión ya abierto. Ten en cuenta que no se pueden abrir múltiples modales al mismo tiempo;
+                este método simplemente alterna entre dos modales separados.
+            </p>
+            <article class="article6">
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Muestra un segundo modal y oculta este con el botón de abajo.
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" data-bs-target="#modal2"
+                                    data-bs-toggle="modal">Abrir segundo modal</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modal2" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalToggleLabel2">Modal #2</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Oculta este modal y muestra el primero con el botón de abajo.
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
+                                    data-bs-toggle="modal">Volver al primero</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Abrir el
+                    primer modal</a>
+            </article>
+        </section>
+    </main>
+
+    <style>
+        .section1 article,
+        .section2 article,
+        .section3 article,
+        .section4 article,
+        .section5 article,
+        .section6 article {
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+    </style>
+    <script>var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', function () {
+            myInput.focus()
+        })
+    </script>
+</body>
+
+</html>

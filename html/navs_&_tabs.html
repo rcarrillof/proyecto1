@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.js"></script>
+
+    <title>Nav & tabs</title>
+</head>
+
+<body>
+    <header>
+        <div class="container__menu">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html"></a></li>
+                        <li><a href="#">Lista de componentes</a>
+                            <ul>
+                                <li><a href="../html/acordion.html">Accordion</a></li>
+                                <li><a href="../html/alerts.html">Alerts</a></li>
+                                <li><a href="../html/notifications.html">Notifications</a></li>
+                                <li><a href="../html/information.html">Information</a></li>
+                                <li><a href="../html/buttons.html">Buttons</a></li>
+                                <li><a href="../html/card.html">Card</a></li>
+                                <li><a href="../html/carousel.html">Carousel</a></li>
+                                <li><a href="../html/collapse.html">Collapse</a></li>
+                                <li><a href="../html/dropdowns.html">Dropdowns</a></li>
+                                <li><a href="../html/list_group.html">List group</a></li>
+                                <li><a href="../html/modal.html">Modal</a></li>
+                                <li><a href="../html/navs_&_tabs.html">Navs & tabs</a></li>
+                                <li><a href="../html/navbar.html">Navbar</a></li>
+                                <li><a href="../html/offcanvas.html">Offcanvas</a></li>
+                                <li><a href="../html/placeholders.html">Placeholders</a></li>
+                                <li><a href="../html/popovers.html">Popovers</a></li>
+                                <li><a href="../html/progress.html">Progress</a></li>
+                                <li><a href="../html/scrollspy.html">Scrollspy</a></li>
+                                <li><a href="../html/toasts.html">Toasts</a></li>
+                                <li><a href="../html/tooltips.html">Tooltips</a></li>
+                                <li><a href="../html/tables.html">Tables</a></li>
+                                <li><a href="../html/forms.html">Forms</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../html/contacto.html">Contacto</a></li>
+                        <li><a href="../html/acerca_de.html">Acerca de</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section1 p-5">
+            <h2>Navs & Tabs</h2>
+            <p>La navegación disponible en Bootstrap comparte marcas y estilos generales, desde la clase base
+                <code>.nav</code> hasta
+                los estados active y disabled. Cambia las clases modificadoras para cambiar entre cada estilo.
+            </p>
+            <article class="article1">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enlace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enlace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Deshabilitado</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="section2 p-5">
+            <h2>Alineación horizontal</h2>
+            <p>Cambia la alineación horizontal de tu navegación con flexbox utility. De forma predeterminada, los
+                navegadores están alineados a la izquierda, pero puedes cambiarlos fácilmente para que estén alineados
+                al centro o a la derecha.
+                Centrado con <code>.justify-content-center</code>:</p>
+            <p>Alineado a la derecha con <code>.justify-content-end</code>:</p>
+            <article class="article2">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Primero</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Segundo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Tercero</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="section3 p-5">
+            <h2>Vertical</h2>
+            <p>Apila tu navegación cambiando la dirección del elemento flex con la utilidad <code>.flex-column.</code>
+                ¿Necesitas
+                apilarlos en algos viewports pero no en otros? Usa las versiones responsive (por ejemplo,
+                <code>.flex-sm-column</code>).
+            </p>
+            <article class="article3">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enlace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enlace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Deshabilitado</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="section4 p-5">
+            <h2>Tabs</h2>
+            <p>Toma la navegación básica de arriba y agrega la clase .nav-tabs para generar una interfaz con pestañas.
+                Úsalos para crear regiones tabulables con nuestro complemento de JavaScript para pestañas.</p>
+            <article class="article4">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enlace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enlace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Deshabilitado</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="section5 p-5">
+            <h2>Pills</h2>
+            <p>Toma ese mismo HTML, pero usa .nav-pills en su lugar:</p>
+            <article class="article5">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enlace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enlace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Deshabilitado</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="section6 p-5">
+            <h2>Llena y justifica</h2>
+            <p>Fuerza el contenido de tu .nav para extender el ancho completo disponible en una de las dos clases
+                modificadoras. Para llenar proporcionalmente todo el espacio disponible con tus <code>.nav-items</code>,
+                usa
+                <code>.nav-fill</code>. Observa que todo el espacio horizontal está ocupado, pero no todos los elementos
+                de
+                navegación tienen el mismo ancho.
+            </p>
+            <article class="article6">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enlace de navegación mucho más largo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enlace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Deshabilitado</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="section7 p-5">
+            <h2>Tabs con dropdowns</h2>
+            <article class="article7">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Acción</a></li>
+                            <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                            <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Enlace separado</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enlace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Deshabilitado</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="section8 p-5">
+            <h2>Pills con dropdowns</h2>
+            <article class="article7">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Acción</a></li>
+                            <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                            <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Enlace separado</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enlace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Deshabilitado</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <style>
+        .section1 article,
+        .section2 article,
+        .section3 article,
+        .section4 article,
+        .section5 article,
+        .section7 article,
+        .section8 article {
+            margin-top: 30px;
+            margin-left: 100px;
+        }
+
+        .section6 article {
+            margin-top: 30px;
+            margin-left: 100px;
+            display: block;
+            max-width: 700px;
+        }
+    </style>
+
+</body>
+
+</html>

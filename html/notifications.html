@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.js"></script>
+    <title>Notificaciones</title>
+</head>
+
+<body>
+    <header>
+        <div class="container__menu">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html"></a></li>
+                        <li><a href="#">Lista de componentes</a>
+                            <ul>
+                                <li><a href="../html/acordion.html">Accordion</a></li>
+                                <li><a href="../html/alerts.html">Alerts</a></li>
+                                <li><a href="../html/notifications.html">Notifications</a></li>
+                                <li><a href="../html/information.html">Information</a></li>
+                                <li><a href="../html/buttons.html">Buttons</a></li>
+                                <li><a href="../html/card.html">Card</a></li>
+                                <li><a href="../html/carousel.html">Carousel</a></li>
+                                <li><a href="../html/collapse.html">Collapse</a></li>
+                                <li><a href="../html/dropdowns.html">Dropdowns</a></li>
+                                <li><a href="../html/list_group.html">List group</a></li>
+                                <li><a href="../html/modal.html">Modal</a></li>
+                                <li><a href="../html/navs_&_tabs.html">Navs & tabs</a></li>
+                                <li><a href="../html/navbar.html">Navbar</a></li>
+                                <li><a href="../html/offcanvas.html">Offcanvas</a></li>
+                                <li><a href="../html/placeholders.html">Placeholders</a></li>
+                                <li><a href="../html/popovers.html">Popovers</a></li>
+                                <li><a href="../html/progress.html">Progress</a></li>
+                                <li><a href="../html/scrollspy.html">Scrollspy</a></li>
+                                <li><a href="../html/toasts.html">Toasts</a></li>
+                                <li><a href="../html/tooltips.html">Tooltips</a></li>
+                                <li><a href="../html/tables.html">Tables</a></li>
+                                <li><a href="../html/forms.html">Forms</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../html/contacto.html">Contacto</a></li>
+                        <li><a href="../html/acerca_de.html">Acerca de</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="section1 p-5">
+        <h1>Notifications</h1>
+        <h2>Documentación y ejemplos para insignias, nuestro pequeño componente de conteo y etiquetado.</h2>
+        <h3>Las insignias se escalan para coincidir con el tamaño del elemento principal inmediato mediante el uso de
+            tamaños de fuente relativos y unidades em:</h3>
+        <div class="container p-5 w-100">
+            <h1>Ejemplo <span class="badge bg-secondary">nuevo!</span></h1>
+            <h2>Ejemplo <span class="badge bg-secondary">nuevo!</span></h2>
+            <h3>Ejemplo <span class="badge bg-secondary">nuevo!</span></h3>
+            <h4>Ejemplo <span class="badge bg-secondary">nuevo!</span></h4>
+            <h5>Ejemplo <span class="badge bg-secondary">nuevo!</span></h5>
+            <h6>Ejemplo <span class="badge bg-secondary">nuevo!</span></h6>
+        </div>
+    </section>
+    <section class="section2 p-5">
+        <h1>Buttons</h1>
+        <h2>Las insignias se pueden usar como parte de enlaces o botones para proporcionar un contador.</h2>
+        <div class="container w-100">
+            <button type="button" class="btn btn-primary">
+                Notificaciones <span class="badge text-bg-secondary">4</span>
+            </button>
+        </div>
+
+    </section>
+    <section class="section3 p-5">
+        <h1>Posición</h1>
+        <h2>Use utilidades para modificar un <code>.badge</code> y colocarlo en la esquina de un enlace o botón.</h2>
+        <div class="container w-100 ">
+            <button type="button" class="btn btn-primary position-relative">
+                SMS
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    999+
+                    <span class="visually-hidden">unread messages</span>
+                </span>
+            </button>
+        </div>
+    </section>
+    <section class="section4 p-5">
+        <h1>También puede reemplazar la clase <code>.badge</code> con algunas utilidades más para un indicador más genérico.</h1>
+        <div class="container w-100">
+            <button type="button" class="btn btn-primary position-relative">
+                Perfil
+                <span
+                    class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                    <span class="visually-hidden">New alerts</span>
+                </span>
+            </button>
+        </div>
+    </section>
+
+    <style>
+        section1,
+        section2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</body>
+
+</html>

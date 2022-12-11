@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.js"></script>
+    <title>popovers</title>
+</head>
+
+<body>
+    <header>
+        <div class="container__menu">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html"></a></li>
+                        <li><a href="#">Lista de componentes</a>
+                            <ul>
+                                <li><a href="../html/acordion.html">Accordion</a></li>
+                                <li><a href="../html/alerts.html">Alerts</a></li>
+                                <li><a href="../html/notifications.html">Notifications</a></li>
+                                <li><a href="../html/information.html">Information</a></li>
+                                <li><a href="../html/buttons.html">Buttons</a></li>
+                                <li><a href="../html/card.html">Card</a></li>
+                                <li><a href="../html/carousel.html">Carousel</a></li>
+                                <li><a href="../html/collapse.html">Collapse</a></li>
+                                <li><a href="../html/dropdowns.html">Dropdowns</a></li>
+                                <li><a href="../html/list_group.html">List group</a></li>
+                                <li><a href="../html/modal.html">Modal</a></li>
+                                <li><a href="../html/navs_&_tabs.html">Navs & tabs</a></li>
+                                <li><a href="../html/navbar.html">Navbar</a></li>
+                                <li><a href="../html/offcanvas.html">Offcanvas</a></li>
+                                <li><a href="../html/placeholders.html">Placeholders</a></li>
+                                <li><a href="../html/popovers.html">Popovers</a></li>
+                                <li><a href="../html/progress.html">Progress</a></li>
+                                <li><a href="../html/scrollspy.html">Scrollspy</a></li>
+                                <li><a href="../html/toasts.html">Toasts</a></li>
+                                <li><a href="../html/tooltips.html">Tooltips</a></li>
+                                <li><a href="../html/tables.html">Tables</a></li>
+                                <li><a href="../html/forms.html">Forms</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../html/contacto.html">Contacto</a></li>
+                        <li><a href="../html/acerca_de.html">Acerca de</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section1 p-5">
+            <h1>Popovers</h1>
+            <ul>popper.min.js antes de bootstrap.js o usar <code>bootstrap.bundle.min.js</code> /
+                <code>bootstrap.bundle.js</code> que contiene Popper para que los popovers funcionen!</li>
+                <li>Los popovers requieren el complemento tooltip como una dependencia.</li>
+                <li>Los popovers son opcionales por motivos de rendimiento, por lo que <strong>debes inicializarlos tú
+                        mismo</strong>.</li>
+                <li>Valores de longitud cero en <code>title</code> y <code>content</code> nunca mostrarán un popover.
+                </li>
+                <li>Especifica <code>container: 'body'</code> para evitar problemas de representación en componentes más
+                    complejos (como nuestros input groups, button groups, etc.).</li>
+                <li>La activación de popovers en elementos ocultos no funcionará.</li>
+                <li>Los popovers para los elementos <code>.disabled</code> o <code>disabled</code> deben activarse en un
+                    elemento padre contenedor.</li>
+                <li>Cuando se activan desde enlaces que se envuelven en varias líneas, los popovers se centrarán entre
+                    el ancho total de los enlaces. Usa <code>.text-nowrap</code> en tus <code>&lt;a&gt;</code>s para
+                    evitar este comportamiento.</li>
+                <li>Los popovers deben estar ocultos antes de que sus elementos correspondientes hayan sido eliminados
+                    del DOM.</li>
+                <li>Los popovers se pueden activar gracias a un elemento dentro del shadow DOM.</li>
+            </ul>
+        </section>
+        <section class="section2 p-5">
+            <div class="container">
+                <h3>Popover Example</h3>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Popover cuerpo"
+                    data-bs-content="Esto es un ejemplo de popovers">
+                    Toggle popover
+                </button>
+            </div>
+
+        </section>
+    </main>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+    <style>
+        .section2{
+            display: inline-block;
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+    </style>
+</body>
+
+</html>

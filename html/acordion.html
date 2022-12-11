@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="../js/bootstrap.bundle.js"></script>
+  <title>Accordion</title>
+</head>
+
+<body>
+  <header>
+    <div class="container__menu">
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="../index.html"></a></li>
+            <li><a href="#">Lista de componentes</a>
+              <ul>
+                <li><a href="../html/acordion.html">Accordion</a></li>
+                <li><a href="../html/alerts.html">Alerts</a></li>
+                <li><a href="../html/notifications.html">Notifications</a></li>
+                <li><a href="../html/information.html">Information</a></li>
+                <li><a href="../html/buttons.html">Buttons</a></li>
+                <li><a href="../html/card.html">Card</a></li>
+                <li><a href="../html/carousel.html">Carousel</a></li>
+                <li><a href="../html/collapse.html">Collapse</a></li>
+                <li><a href="../html/dropdowns.html">Dropdowns</a></li>
+                <li><a href="../html/list_group.html">List group</a></li>
+                <li><a href="../html/modal.html">Modal</a></li>
+                <li><a href="../html/navs_&_tabs.html">Navs & tabs</a></li>
+                <li><a href="../html/navbar.html">Navbar</a></li>
+                <li><a href="../html/offcanvas.html">Offcanvas</a></li>
+                <li><a href="../html/placeholders.html">Placeholders</a></li>
+                <li><a href="../html/popovers.html">Popovers</a></li>
+                <li><a href="../html/progress.html">Progress</a></li>
+                <li><a href="../html/scrollspy.html">Scrollspy</a></li>
+                <li><a href="../html/toasts.html">Toasts</a></li>
+                <li><a href="../html/tooltips.html">Tooltips</a></li>
+                <li><a href="../html/tables.html">Tables</a></li>
+                <li><a href="../html/forms.html">Forms</a></li>
+              </ul>
+            </li>
+            <li><a href="../html/contacto.html">Contacto</a></li>
+            <li><a href="../html/acerca_de.html">Acerca de</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="section1 p-5">
+    <h1>Accordion</h1>
+    <h2>Haga clic en los acordeones a continuación para expandir/contraer el contenido del acordeón.</h2>
+    <div class="accordion p-4" id="accordionejem">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Accordion #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionejem">
+          <div class="accordion-body">
+            <strong>Este es el cuerpo de acordeón del primer elemento. </strong> Se muestra de forma predeterminada,
+            hasta que el complemento de “collapse” agrega las clases apropiadas que usamos para diseñar cada elemento.
+            Estas clases controlan la apariencia general, así como la visualización y ocultación a través de
+            transiciones CSS. Puede modificar cualquiera de esto con CSS personalizado o anulando nuestras variables
+            predeterminadas. También vale la pena señalar que casi cualquier HTML puede ir dentro del
+            <code>.accordion-body</code>,
+            aunque la transición limita.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Accordion #2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionejem">
+          <div class="accordion-body">
+            <strong>Este es el cuerpo del acordeón del segundo elemento.</strong> Cree acordeones que se contraen
+            verticalmente en combinación con el complemento Collapse JavaScript.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Accordion #3
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionejem">
+          <div class="accordion-body">
+            <strong>Este es el tercer accordion.</strong>
+            Sabias que... Una investigación descubre que la asimetría del cerebro está influenciada por las experiencias
+            de una persona.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section2 p-5">
+    <h1>Flush</h1>
+    <h2>Agregue <code>.accordion-flush</code> para eliminar el <code>.background-color</code>, predeterminado, algunos
+      bordes y algunas esquinas redondeadas para representar los acordeones de borde a borde con su contenedor
+      principal.</h2>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Accordion #1
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"><strong>sabias que...</strong> Las cucarachas pueden sobrevivir hasta tres semanas
+            sin cabeza.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Accordion #2
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"><strong>Sabias que... </strong>Los delfines macho se unen para abusar de las
+            hembras y procrear.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Accordion #3
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"><strong>Sabias que... </strong>El juego del Monopoly fue creado por un
+            anti-capitalista que quería demostrar lo injusto que era el capitalismo.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section3 p-5">
+    <h1>Always open</h1>
+    <h2>Omita el atributo en cada <code>.accordion-collapse</code> para que los elementos de acordeón permanezcan
+      abiertos cuando se abre otro elemento.</h2>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne">
+            Accordion #1
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+          aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            <strong>El primer accordion</strong> Se muestra de forma predeterminada, hasta que el
+            complemento de collapse agrega las clases apropiadas que usamos para diseñar cada elemento. Estas clases
+            controlan la apariencia general, así como la visualización y ocultación a través de transiciones CSS. Puede
+            modificar cualquiera de esto con CSS personalizado o anulando nuestras variables predeterminadas. También
+            vale la pena señalar que casi cualquier HTML puede ir dentro del <code>.accordion-body</code>, aunque la
+            transición
+            limita el desbordamiento.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseTwo">
+            Accordion #2
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            <strong>Error</strong>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseThree">
+            Accordion #3
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            <strong>Error</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

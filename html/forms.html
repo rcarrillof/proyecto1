@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.js"></script>
+    <title>Forms</title>
+</head>
+
+<body>
+    <header>
+        <div class="container__menu">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html"></a></li>
+                        <li><a href="#">Lista de componentes</a>
+                            <ul>
+                                <li><a href="../html/acordion.html">Accordion</a></li>
+                                <li><a href="../html/alerts.html">Alerts</a></li>
+                                <li><a href="../html/notifications.html">Notifications</a></li>
+                                <li><a href="../html/information.html">Information</a></li>
+                                <li><a href="../html/buttons.html">Buttons</a></li>
+                                <li><a href="../html/card.html">Card</a></li>
+                                <li><a href="../html/carousel.html">Carousel</a></li>
+                                <li><a href="../html/collapse.html">Collapse</a></li>
+                                <li><a href="../html/dropdowns.html">Dropdowns</a></li>
+                                <li><a href="../html/list_group.html">List group</a></li>
+                                <li><a href="../html/modal.html">Modal</a></li>
+                                <li><a href="../html/navs_&_tabs.html">Navs & tabs</a></li>
+                                <li><a href="../html/navbar.html">Navbar</a></li>
+                                <li><a href="../html/offcanvas.html">Offcanvas</a></li>
+                                <li><a href="../html/placeholders.html">Placeholders</a></li>
+                                <li><a href="../html/popovers.html">Popovers</a></li>
+                                <li><a href="../html/progress.html">Progress</a></li>
+                                <li><a href="../html/scrollspy.html">Scrollspy</a></li>
+                                <li><a href="../html/toasts.html">Toasts</a></li>
+                                <li><a href="../html/tooltips.html">Tooltips</a></li>
+                                <li><a href="../html/tables.html">Tables</a></li>
+                                <li><a href="../html/forms.html">Forms</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../html/contacto.html">Contacto</a></li>
+                        <li><a href="../html/acerca_de.html">Acerca de</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section1 p-5">
+            <h1>Forms</h1>
+            <h2>Descripción general</h2>
+            <p>Los controles de formulario de Bootstrap se expanden en nuestros estilos de formulario reiniciados con
+                clases. Usa estas clases para optar por tus pantallas personalizadas para una representación más
+                consistente en todos los navegadores y dispositivos.
+
+                Asegúrate de utilizar un atributo type apropiado en todas las entradas (por ejemplo, email para las
+                direcciones de correo electrónico o number para información numérica) para aprovechar los controles de
+                entrada más nuevos, como la verificación de correo electrónico, la selección de números y más.
+
+                Aquí hay un ejemplo rápido para demostrar los estilos de formulario de Bootstrap. Sigue leyendo para
+                obtener documentación sobre las clases requeridas, el diseño de formularios y más.</p>
+            <article class="article1">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Verificado</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </article>
+        </section>
+        <section class="section2 p-5">
+            <h2>Textos de formulario</h2>
+            <p>Textos de formulario a nivel de bloque o en línea se pueden crear usando <code>.form-text.</code></p>
+            <article class="article2">
+                <label for="inputPassword5" class="form-label">Contraseña</label>
+                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                <div id="passwordHelpBlock" class="form-text">
+                    Tu contraseña debe tener entre 8 y 20 caracteres, contener letras y números, y no debe contener
+                    espacios, caracteres especiales ni emoji.
+                </div>
+            </article>
+            <article>
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                        <label for="inputPassword6" class="col-form-label">Contraseña</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="password" id="inputPassword6" class="form-control"
+                            aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-text">
+                            Debe tener entre 8 y 20 caracteres.
+                        </span>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="section3 p-5">
+            <h2>Formularios deshabilitados</h2>
+            <p>Agrega el atributo booleano <code>disabled</code> en un input para evitar interacciones del usuario y hacer que parezca más claro.</p>
+            <article class="article2">
+                <form>
+                    <fieldset disabled>
+                      <legend>Ejemplo de fieldset deshabilitado</legend>
+                      <div class="mb-3">
+                        <label for="disabledTextInput" class="form-label">Input deshabilitado</label>
+                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Input deshabilitado">
+                      </div>
+                      <div class="mb-3">
+                        <label for="disabledSelect" class="form-label">Select menu deshabilitado</label>
+                        <select id="disabledSelect" class="form-select">
+                          <option>Select deshabilitado</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+                          <label class="form-check-label" for="disabledFieldsetCheck">
+                            No puedes verificar esto
+                          </label>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                    </fieldset>
+                  </form>
+                </form>
+            </article>
+        </section>
+
+    </main>
+    <style>
+        .section1 article,
+        .section2 article,
+        .section3 article {
+            width: 800px;
+            margin-left: 100px;
+            margin-top: 70px;
+        }
+    </style>
+</body>
+
+</html>

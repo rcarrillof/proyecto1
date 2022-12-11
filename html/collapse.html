@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.js"></script>
+    <title>Collapse</title>
+</head>
+
+<body>
+    <header>
+        <div class="container__menu">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html"></a></li>
+                        <li><a href="#">Lista de componentes</a>
+                            <ul>
+                                <li><a href="../html/acordion.html">Accordion</a></li>
+                                <li><a href="../html/alerts.html">Alerts</a></li>
+                                <li><a href="../html/notifications.html">Notifications</a></li>
+                                <li><a href="../html/information.html">Information</a></li>
+                                <li><a href="../html/buttons.html">Buttons</a></li>
+                                <li><a href="../html/card.html">Card</a></li>
+                                <li><a href="../html/carousel.html">Carousel</a></li>
+                                <li><a href="../html/collapse.html">Collapse</a></li>
+                                <li><a href="../html/dropdowns.html">Dropdowns</a></li>
+                                <li><a href="../html/list_group.html">List group</a></li>
+                                <li><a href="../html/modal.html">Modal</a></li>
+                                <li><a href="../html/navs_&_tabs.html">Navs & tabs</a></li>
+                                <li><a href="../html/navbar.html">Navbar</a></li>
+                                <li><a href="../html/offcanvas.html">Offcanvas</a></li>
+                                <li><a href="../html/placeholders.html">Placeholders</a></li>
+                                <li><a href="../html/popovers.html">Popovers</a></li>
+                                <li><a href="../html/progress.html">Progress</a></li>
+                                <li><a href="../html/scrollspy.html">Scrollspy</a></li>
+                                <li><a href="../html/toasts.html">Toasts</a></li>
+                                <li><a href="../html/tooltips.html">Tooltips</a></li>
+                                <li><a href="../html/tables.html">Tables</a></li>
+                                <li><a href="../html/forms.html">Forms</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../html/contacto.html">Contacto</a></li>
+                        <li><a href="../html/acerca_de.html">Acerca de</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="section1 p-5">
+        <h1>Collapse</h1>
+        <h2>Alterne la visibilidad del contenido en su proyecto con algunas clases y nuestros complementos de
+            JavaScript.</h2>
+        <article class="article1">
+            <p>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    boton para abrir
+                </a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Boton para abrir 2
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    ¿Sabías qué? se escribe con tilde cuando qué es un pronombre que forma parte de una oración
+                    interrogativa directa y la expresión se emplea como fórmula introductoria que anticipa una
+                    información
+                </div>
+        </article>
+    </section>
+    <section class="section2 p-5">
+        <h1>Horizontal </h1>
+        <h2>El complemento de colapso también admite el colapso horizontal. Agregue la clase de modificador
+            <code>.collapse-horizontal</code>
+            para cambiar el ancho en lugar de la altura y establezca un ancho en el elemento
+            secundario inmediato.
+        </h2>
+        <article class="article1">
+            <p>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExampless" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    abrir/cerrar
+                </a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExampless" aria-expanded="false" aria-controls="collapseExample">
+                    abrir/cerrar 2
+                </button>
+            </p>
+            <div class="collapse" id="collapseExampless">
+                <div class="card card-body">
+                    la piel de los párpados es cinco veces más fina o delgada que el resto de la piel de la cara
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="section3 p-5">
+        <h1>Horizontal</h1>
+        <h2>El complemento de Collapse también admite el colapso horizontal. Agrega la clase modificadora
+            .collapse-horizontal para cambiar el width en lugar de height y establece un width en el elemento secundario
+            inmediato. Siéntete libre de escribir tu propio Sass personalizado, usar estilos en línea o usar nuestras
+            utilidades de ancho.</h2>
+        <article class="article2">
+            <p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseejem"
+                    aria-expanded="false" aria-controls="collapseejem">
+                    Otro ejemplo!
+                </button>
+            </p>
+            <div style="min-height: 120px;">
+                <div class="collapse collapse-horizontal" id="collapseejem">
+                    <div class="card card-body" style="width: 300px;">
+                        El primer avión voló el 17 de diciembre de 1903. Wilbur y Orville Wright realizaron cuatro
+                        breves vuelos en Kitty Hawk, Carolina del Norte, con su primera aeronave a motor, también
+                        conocida como el primer avión.
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="section4 p-5">
+        <h1>Un <code>button</code> o <code>a</code> puede mostrar y ocultar varios elementos al hacer referencia a ellos
+            con un selector en su
+            atributo href o <code>data-bs-target.</code> Múltiples <code>button</code> o <code>a</code> pueden mostrar y
+            ocultar un elemento si
+            cada uno hace referencia a él con su atributo <code>href</code> o <code>data-bs-target</code>.</h1>
+        <article class="article3">
+            <p>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+                    aria-expanded="false" aria-controls="multiCollapseExample1">Alternar el primer elemento</a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                    aria-controls="multiCollapseExample2">Alternar el segundo elemento</button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+                    aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Alternar ambos
+                    elementos</button>
+            </p>
+            <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                            Venus es el único planeta que gira en el sentido de las agujas del reloj. Viaja alrededor
+                            del sol una vez cada 225 días terrestres, pero gira en el sentido de las agujas del reloj
+                            una vez cada 243 días.
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                            La nuez moscada es un alucinógeno. La especia contiene miristicina, un compuesto natural que
+                            tiene efectos alteradores de la mente si se ingiere en grandes dosis.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <style>
+        .article1,
+        .article2,
+        .article3 {
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+    </style>
+</body>
+
+</html>
